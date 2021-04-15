@@ -1,0 +1,48 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "bento/ubuntu-18.04"
+
+  config.vm.network "forwarded_port", guest: 25565, host: 25565
+
+  # config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
+
+  # config.vm.network "private_network", ip: "192.168.33.10"
+
+  # config.vm.network "public_network"
+
+  config.vm.synced_folder ".", "/shared_files"
+
+  config.vm.provider "virtualbox" do |vb|
+  #   # Display the VirtualBox GUI when booting the machine
+  #   vb.gui = true
+  #
+  #   # Customize the amount of memory on the VM:
+    vb.memory = "3072"
+  end
+
+  config.vm.provision "shell", inline: <<-SHELL
+    apt-get update
+    apt-get upgrade
+    apt-get install -y python3 python3-pip python3-venv python3-dev nginx
+
+    mkdir /usr/local/java
+    cp /shared_files/jre-8u281-linux-x64.tar.gz /usr/local/java
+    cd /usr/local/java
+    tar zxvf jre-8u281-linux-x64.tar.gz
+    rm jre-8u281-linux-x64.tar.gz
+    update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jre1.8.0_281/bin/java" 1
+    java -version
+
+    mkdir /app
+    cd /app
+    cp /shared_files/*.* /app
+    python3 -m venv .venv
+    source /app/.venv/bin/activate
+    #First Switch is the max memory, the second switch is the initial memory.
+    java -Xmx1024M -Xms1024M -jar server.jar nogui
+
+  SHELL
+end
