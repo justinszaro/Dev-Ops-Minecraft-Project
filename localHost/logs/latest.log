@@ -1,0 +1,66 @@
+[08:30:31] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[08:30:31] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[08:30:31] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08:30:31] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08:30:31] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[08:30:31] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08:30:31] [main/INFO]: Reloading ResourceManager: Default
+[08:30:32] [Worker-Main-14/INFO]: Loaded 7 recipes
+[08:30:32] [Worker-Main-14/INFO]: Loaded 927 advancements
+[08:30:34] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[08:30:34] [Server thread/INFO]: Loading properties
+[08:30:34] [Server thread/INFO]: Default game type: SURVIVAL
+[08:30:34] [Server thread/INFO]: Generating keypair
+[08:30:34] [Server thread/INFO]: Starting Minecraft server on *:25565
+[08:30:34] [Server thread/INFO]: Using default channel type
+[08:30:34] [Server thread/INFO]: Preparing level "DevOps"
+[08:30:40] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[08:30:40] [Worker-Main-13/INFO]: Preparing spawn area: 0%
+[08:30:41] [Worker-Main-11/INFO]: Preparing spawn area: 0%
+[08:30:41] [Worker-Main-10/INFO]: Preparing spawn area: 0%
+[08:30:41] [Worker-Main-13/INFO]: Preparing spawn area: 0%
+[08:30:42] [Worker-Main-8/INFO]: Preparing spawn area: 0%
+[08:30:42] [Worker-Main-9/INFO]: Preparing spawn area: 1%
+[08:30:43] [Worker-Main-13/INFO]: Preparing spawn area: 1%
+[08:30:43] [Worker-Main-8/INFO]: Preparing spawn area: 2%
+[08:30:44] [Worker-Main-8/INFO]: Preparing spawn area: 2%
+[08:30:44] [Worker-Main-10/INFO]: Preparing spawn area: 4%
+[08:30:45] [Worker-Main-14/INFO]: Preparing spawn area: 4%
+[08:30:45] [Worker-Main-8/INFO]: Preparing spawn area: 4%
+[08:30:46] [Worker-Main-10/INFO]: Preparing spawn area: 9%
+[08:30:46] [Worker-Main-10/INFO]: Preparing spawn area: 9%
+[08:30:47] [Worker-Main-9/INFO]: Preparing spawn area: 9%
+[08:30:47] [Worker-Main-8/INFO]: Preparing spawn area: 15%
+[08:30:48] [Worker-Main-14/INFO]: Preparing spawn area: 15%
+[08:30:48] [Worker-Main-10/INFO]: Preparing spawn area: 15%
+[08:30:49] [Worker-Main-8/INFO]: Preparing spawn area: 15%
+[08:30:49] [Worker-Main-8/INFO]: Preparing spawn area: 15%
+[08:30:50] [Worker-Main-8/INFO]: Preparing spawn area: 22%
+[08:30:50] [Worker-Main-13/INFO]: Preparing spawn area: 24%
+[08:30:51] [Worker-Main-8/INFO]: Preparing spawn area: 24%
+[08:30:51] [Worker-Main-14/INFO]: Preparing spawn area: 24%
+[08:30:52] [Worker-Main-12/INFO]: Preparing spawn area: 29%
+[08:30:52] [Worker-Main-14/INFO]: Preparing spawn area: 32%
+[08:30:53] [Worker-Main-12/INFO]: Preparing spawn area: 35%
+[08:30:53] [Worker-Main-9/INFO]: Preparing spawn area: 39%
+[08:30:54] [Worker-Main-10/INFO]: Preparing spawn area: 44%
+[08:30:54] [Worker-Main-10/INFO]: Preparing spawn area: 48%
+[08:30:55] [Worker-Main-11/INFO]: Preparing spawn area: 52%
+[08:30:55] [Worker-Main-13/INFO]: Preparing spawn area: 58%
+[08:30:56] [Worker-Main-14/INFO]: Preparing spawn area: 62%
+[08:30:56] [Worker-Main-10/INFO]: Preparing spawn area: 68%
+[08:30:57] [Worker-Main-9/INFO]: Preparing spawn area: 73%
+[08:30:57] [Worker-Main-13/INFO]: Preparing spawn area: 80%
+[08:30:58] [Worker-Main-8/INFO]: Preparing spawn area: 89%
+[08:30:58] [Worker-Main-9/INFO]: Preparing spawn area: 97%
+[08:30:58] [Server thread/INFO]: Time elapsed: 18696 ms
+[08:30:58] [Server thread/INFO]: Done (24.137s)! For help, type "help"
+[08:34:27] [User Authenticator #1/INFO]: UUID of player Innie_ is 39c422c5-3ca8-4e7b-8675-904329664f0b
+[08:34:27] [Server thread/INFO]: Innie_[/10.77.129.63:52847] logged in with entity id 198 at (26.5, 67.0, -235.5)
+[08:34:27] [Server thread/INFO]: Innie_ joined the game
+[08:34:46] [Server thread/INFO]: Innie_ lost connection: Disconnected
+[08:34:46] [Server thread/INFO]: Innie_ left the game
+[08:34:56] [User Authenticator #2/INFO]: UUID of player Innie_ is 39c422c5-3ca8-4e7b-8675-904329664f0b
+[08:34:56] [Server thread/INFO]: Innie_[/10.77.129.63:52854] logged in with entity id 359 at (13.339377794611096, 68.0, -250.2816809703628)
+[08:34:56] [Server thread/INFO]: Innie_ joined the game
+[08:37:05] [Server thread/INFO]: Stopping server
