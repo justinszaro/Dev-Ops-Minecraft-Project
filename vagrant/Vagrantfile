@@ -38,11 +38,11 @@ Vagrant.configure("2") do |config|
 
     mkdir /app
     cd /app
-    cp /shared_files/*.* /app
+    cp -R /shared_files/* /app
     python3 -m venv .venv
     source /app/.venv/bin/activate
     #First Switch is the max memory, the second switch is the initial memory.
-    java -Xmx1024M -Xms1024M -jar server.jar nogui
+    java -Xmx4G -Xms4G -jar forge-1.16.5-36.1.0.jar nogui
 
   SHELL
 end
