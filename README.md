@@ -5,10 +5,13 @@ Contributors - Kyle Smilon, Max Schuman, Justin Szaro
 ## Overview
 Project allows for creation of a minecraft on local machine through
 virtual environment, virtual machine, and global server. Each minecraft
-server has a different manifest all implementing different features to make it
-less "vanilla". 
+server has a different manifest all implementing different features to make it less "vanilla".
 
+# Python Virtual Environment
 
+# Vagrant Virtual Environment
+"vagrant up" will launch a minecraft forge server. The mod folder contains Tinkers Construct and Mantle. To join the server, the user must also have these Mods installed. Only players that are local on the machine can join this server.
+# AWS Environment
 
 ## Setup
 # Python Virtual Environment
@@ -33,10 +36,7 @@ cd /usr/games/minecraft
 9. Use the following command to run the minecraft server : sudo java -Xmx1G -Xms1G -jar mcserver.jar nogui
 10. Launch minecraft and add server using the public IP from the instance you created
 
-
-
 ## Technologies Used
-Provide a links to the homepage for each technology used.
 Vagrant: https://www.vagrantup.com/
 AWS: https://aws.amazon.com/
 Java Download: http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
@@ -46,9 +46,8 @@ Mantle: https://www.curseforge.com/minecraft/mc-mods/mantle
 Timber: https://www.curseforge.com/minecraft/bukkit-plugins/timber-plugin/download
 Backpacks: https://www.curseforge.com/members/georgh93/projects
 ScoreBoard: https://www.curseforge.com/minecraft/bukkit-plugins/scoreboardstats/download
-##  Background
-Provide links to the sources you looked at to get your system working. This would help another person reproduce your work.
 
+##  Background
 Installing Java on Ubuntu: https://ubuntu.com/tutorials/install-jre#3-installing-oracle-jre
 Java SE Documentation: https://docs.oracle.com/javase/7/docs/technotes/tools/windows/java.html
 AWS: https://aws.amazon.com/getting-started/hands-on/run-your-own-minecraft-server/?sc_channel=EL&sc_campaign=Demo_deep_dive_2020_vid&sc_medium=YouTube&sc_content=Video7662&sc_detail=COMPUTE&sc_country=US
