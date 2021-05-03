@@ -3,16 +3,12 @@
 Contributors - Kyle Smilon, Max Schuman, Justin Szaro
 
 ## Overview
-Describe the project
+Project allows for creation of a minecraft on local machine through
+virtual environment, virtual machine, and global server. Each minecraft
+server has a different manifest all implementing different features to make it
+less "vanilla". 
 
-## Setup
-# Python Virtual Environment
-## Dev Ops Minecraft Server
 
-Contributors - Kyle Smilon, Max Schuman, Justin Szaro
-
-## Overview
-Describe the project
 
 ## Setup
 # Python Virtual Environment
