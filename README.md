@@ -9,7 +9,9 @@ server has a different manifest all implementing different features to make it
 less "vanilla".
 
 # Python Virtual Environment
-
+In a virtual environment the server is created using a startup script command. The server is launched using a
+spigot.jar file that allows for installing plugins such as Timber and ScoreBoard on port 25565 which is
+specified in the script.
 # Vagrant Virtual Environment
 "vagrant up" will launch a minecraft forge server. The mod folder contains Tinkers Construct and Mantle. To join the server, the user must also have these Mods installed. Only players that are local on the machine can join this server.
 # AWS Environment
@@ -18,9 +20,7 @@ After setting up the AWS server using the commands below and getting the public 
 ## Setup
 # Python Virtual Environment
 1. Move into localHost folder: cd localHost
-2. Create virtual environment: python3 -m venv .venv
-3. Source into the venv: source .venv/bin/activate
-4. Launch the Minecraft server: java -Xmx1G -jar spigot-1.16.5.jar --port 25565 --nogui
+2. Run the startup script: bash startup.sh
 
 # Vagrant Minecraft Server
 1. Move into the vagrant folder: cd vagrant
@@ -55,14 +55,12 @@ Timber: https://www.curseforge.com/Minecraft/bukkit-plugins/timber-plugin/downlo
 ScoreBoard: https://www.curseforge.com/Minecraft/bukkit-plugins/scoreboardstats/download
 ##  Background
 Provide links to the sources you looked at to get your system working. This would help another person reproduce your work.
-=======
 Minecraft Forge: https://files.minecraftforge.net/net/minecraftforge/forge/
 Tinker's Construct: https://www.curseforge.com/minecraft/mc-mods/tinkers-construct
 Mantle: https://www.curseforge.com/minecraft/mc-mods/mantle
 Timber: https://www.curseforge.com/minecraft/bukkit-plugins/timber-plugin/download
 Backpacks: https://www.curseforge.com/members/georgh93/projects
 ScoreBoard: https://www.curseforge.com/minecraft/bukkit-plugins/scoreboardstats/download
->>>>>>> d589ecad40938a392ba5f524a75d175edf01f8ef
 
 ##  Background
 Installing Java on Ubuntu: https://ubuntu.com/tutorials/install-jre#3-installing-oracle-jre
