@@ -3,44 +3,41 @@
 
 Vagrant.configure("2") do |config|
 
+  #Starts an Ubuntu Box
   config.vm.box = "bento/ubuntu-18.04"
 
+  #Forwards traffic from port 25565 to port 25565.
   config.vm.network "forwarded_port", guest: 25565, host: 25565
 
-  # config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
-
-  # config.vm.network "private_network", ip: "192.168.33.10"
-
-  # config.vm.network "public_network"
-
+  #Shares the current directory with the shared_files folder in the vagrant machine.
   config.vm.synced_folder ".", "/shared_files"
 
   config.vm.provider "virtualbox" do |vb|
-  #   # Display the VirtualBox GUI when booting the machine
-  #   vb.gui = true
-  #
-  #   # Customize the amount of memory on the VM:
+    #Gives the virtual box 3gigs of Memory.
     vb.memory = "3072"
   end
 
   config.vm.provision "shell", inline: <<-SHELL
+    #Installs and updates the required packages.
     apt-get update
     apt-get upgrade
-    apt-get install -y python3 python3-pip python3-venv python3-dev nginx
-
+    
+    #Installs java in the virtual machine.
     mkdir /usr/local/java
     cp /shared_files/jre-8u281-linux-x64.tar.gz /usr/local/java
     cd /usr/local/java
+    #Compresses the group of files into the archive.
+    # compress with gzip. extract, verbose, file
     tar zxvf jre-8u281-linux-x64.tar.gz
     rm jre-8u281-linux-x64.tar.gz
+    #Installs Java
     update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jre1.8.0_281/bin/java" 1
+    #Prints our the current version of Java
     java -version
 
     mkdir /app
     cd /app
     cp -R /shared_files/* /app
-    python3 -m venv .venv
-    source /app/.venv/bin/activate
     #First Switch is the max memory, the second switch is the initial memory.
     java -Xmx4G -Xms4G -jar forge-1.16.5-36.1.0.jar nogui
 
