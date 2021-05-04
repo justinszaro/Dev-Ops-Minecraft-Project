@@ -13,6 +13,7 @@ less "vanilla".
 # Vagrant Virtual Environment
 "vagrant up" will launch a minecraft forge server. The mod folder contains Tinkers Construct and Mantle. To join the server, the user must also have these Mods installed. Only players that are local on the machine can join this server.
 # AWS Environment
+After setting up the AWS server using the commands below and getting the public IP from the AWS lightsail instance menu.
 
 ## Setup
 # Python Virtual Environment
@@ -31,12 +32,16 @@ less "vanilla".
 3. In "Networking" add a firewall rule to allow port 25565
 4. Tab over to the connect tab and select "Connect using SSH"
 5. Enter the following command(this updates the server and installs javaRuntime) :  sudo apt -y update && sudo apt -y install default-jre screen
-6. Create your Minecraft directory: sudo mkdir /usr/games/Minecraft
-7. Switch into your Minecraft directory :
-cd /usr/games/Minecraft
+6. Create your minecraft directory: sudo mkdir /usr/games/minecraft
+7. Switch into your Miencraft directory :
+cd /usr/games/minecraft
 8. Download the server.jar file : sudo wget -O mcserver.jar https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar
-9. Use the following command to run the Minecraft server : sudo java -Xmx1G -Xms1G -jar mcserver.jar nogui
-10. Launch Minecraft and add server using the public IP from the instance you created
+9. Use the following command to run the minecraft server : sudo java -Xmx1G -Xms1G -jar mcserver.jar nogui
+10. You then are next going to need to switch the eula.txt file permissions : sudo chown ubuntu eula.txt
+11. echo "eula=true" > eula.txt
+12. sudo java -Xmx1G -Xms1G -jar mcserver.jar nogui
+13. Launch minecraft and add server using the public IP from the instance you created
+
 
 ## Technologies Used
 Vagrant: https://www.vagrantup.com/
