@@ -18,9 +18,7 @@ After setting up the AWS server using the commands below and getting the public 
 ## Setup
 # Python Virtual Environment
 1. Move into localHost folder: cd localHost
-2. Create virtual environment: python3 -m venv .venv
-3. Source into the venv: source .venv/bin/activate
-4. Launch the Minecraft server: java -Xmx1G -jar spigot-1.16.5.jar --port 25565 --nogui
+2. Run the startup script: bash startup.sh
 
 # Vagrant Minecraft Server
 1. Move into the vagrant folder: cd vagrant
