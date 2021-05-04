@@ -9,7 +9,9 @@ server has a different manifest all implementing different features to make it
 less "vanilla".
 
 # Python Virtual Environment
-
+java command boots up Minecraft server within your virtual environment. Spigot.jar folder reads the servers need such
+as the plugins that have been added. The server is created on the specified port and is only local. Server also contains a
+resource pack that when the player joins the are met with a prompt asking if they would like to use it.
 # Vagrant Virtual Environment
 "vagrant up" will launch a minecraft forge server. The mod folder contains Tinkers Construct and Mantle. To join the server, the user must also have these Mods installed. Only players that are local on the machine can join this server.
 # AWS Environment
