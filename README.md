@@ -15,7 +15,7 @@ specified in the script.
 # Vagrant Virtual Environment
 "vagrant up" will launch a minecraft forge server. The mod folder contains Tinkers Construct and Mantle. To join the server, the user must also have these Mods installed. Only players that are local on the machine can join this server.
 # AWS Environment
-After setting up the AWS server using the commands below and getting the public IP from the AWS lightsail instance menu.
+After setting up the AWS server using the commands below and getting the public IP from the AWS lightsail instance menu, the basic minecraft server can be connected to using the IP given by the AWS console. 
 
 ## Setup
 # Python Virtual Environment
@@ -55,14 +55,12 @@ Timber: https://www.curseforge.com/Minecraft/bukkit-plugins/timber-plugin/downlo
 ScoreBoard: https://www.curseforge.com/Minecraft/bukkit-plugins/scoreboardstats/download
 ##  Background
 Provide links to the sources you looked at to get your system working. This would help another person reproduce your work.
-=======
 Minecraft Forge: https://files.minecraftforge.net/net/minecraftforge/forge/
 Tinker's Construct: https://www.curseforge.com/minecraft/mc-mods/tinkers-construct
 Mantle: https://www.curseforge.com/minecraft/mc-mods/mantle
 Timber: https://www.curseforge.com/minecraft/bukkit-plugins/timber-plugin/download
 Backpacks: https://www.curseforge.com/members/georgh93/projects
 ScoreBoard: https://www.curseforge.com/minecraft/bukkit-plugins/scoreboardstats/download
->>>>>>> d589ecad40938a392ba5f524a75d175edf01f8ef
 
 ##  Background
 Installing Java on Ubuntu: https://ubuntu.com/tutorials/install-jre#3-installing-oracle-jre
