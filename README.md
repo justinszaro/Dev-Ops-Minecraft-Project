@@ -13,7 +13,7 @@ less "vanilla".
 # Vagrant Virtual Environment
 "vagrant up" will launch a minecraft forge server. The mod folder contains Tinkers Construct and Mantle. To join the server, the user must also have these Mods installed. Only players that are local on the machine can join this server.
 # AWS Environment
-After setting up the AWS server using the commands below and getting the public IP from the AWS lightsail instance menu.
+After setting up the AWS server using the commands below and getting the public IP from the AWS lightsail instance menu. Joining the server is as simple as putting the IP into the IP slot in the multiplayer menu. Anyone can join aslong as they have the correct IP and a wifi connection.
 
 ## Setup
 # Python Virtual Environment
